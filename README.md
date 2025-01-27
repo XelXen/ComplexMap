@@ -54,13 +54,13 @@ The color wheel is a circular representation of all colors, organized by hue. Hu
 
 ![Color Wheel](media/7.png)
 
-Hue alone provides only one additional dimension. To introduce another, we can use saturation, which measures the intensity of a color. A saturation of 0 results in white, while 100 represents the pure color. Saturation can represent the distance from the center of the color wheel: the closer to the center, the lower the saturation; the further, the higher the saturation. This model is called the HSL (Hue, Saturation, Value) color space. Value is usually kept constant, as it represents the brightness of the color.
+Hue alone provides only one additional dimension. To introduce another, we can use saturation, which measures the intensity of a color. A saturation of 0 results in white, while 100 represents the pure color. Saturation can represent the distance from the center of the color wheel: the closer to the center, the lower the saturation; the further, the higher the saturation. This model is called the HSL (Hue, Saturation, Value) color space. Value is usually kept constant (100 in our case), as it represents the darkness of the color.
 
 ![Saturation](media/8.png)
 
 Now we have two dimensions—hue and saturation—to represent either the input or output plane’s coordinates. The other two dimensions can be represented by yet another plane. Next, we must decide how to assign these dimensions.
 
-From precalculus, we know that a function is defined from a domain to a co-domain. However, the co-domain is not always fully mapped by the domain. For example, f(n) = n×n is defined from real numbers to real numbers, but its output is always positive. This means the co-domain is not completely mapped to the domain. Using this concept, we can map our complex functions by treating the domain as the plane and the co-domain’s coordinates as the colors.
+Assuming that the domain is by default colored as the above picture, normalizing it's limits, we can assign each domain's coordinate color to a coordinate in output plane forming a mapping. This way, we can visualize the complex function's output in a 2D plane using angular colors.
 
 ## 5. Goal
 
@@ -68,9 +68,8 @@ To implement this mapping, we need a script that:
 
 1. Accepts a complex function as input.
 2. Iterates over a set of coordinates from the input view frame.
-3. Computes the output for each input coordinate using the given function.
-4. Maps the output to a corresponding color using angular colors.
-5. Colors the input coordinate on the plane with the mapped color.
+3. Forms the default color mesh for the input plane.
+4. Maps each color coordinate to the output plane using the complex function. All the remaining points in the codomain remain black.
 
 ## 6. Inspirations
 
