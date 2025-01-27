@@ -60,7 +60,9 @@ Hue alone provides only one additional dimension. To introduce another, we can u
 
 Now we have two dimensions—hue and saturation—to represent either the input or output plane’s coordinates. The other two dimensions can be represented by yet another plane. Next, we must decide how to assign these dimensions.
 
-Assuming that the domain is by default colored as the above picture, normalizing it's limits, we can assign each domain's coordinate color to a coordinate in output plane forming a mapping. This way, we can visualize the complex function's output in a 2D plane using angular colors.
+Assuming that the domain is by default colored as the above picture, normalizing it's limits, we can assign each domain's coordinate color to a coordinate in output plane forming a mapping. This way, we can visualize the complex function's output in a 2D plane using angular colors. For example, given below is a limited mapping of popular riemann zeta function using our approach.
+
+![Example Mapping](media/10.png)
 
 ## 5. Goal
 
