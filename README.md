@@ -71,3 +71,11 @@ To implement this mapping, we need a script that:
 3. Computes the output for each input coordinate using the given function.
 4. Maps the output to a corresponding color using angular colors.
 5. Colors the input coordinate on the plane with the mapped color.
+
+## 6. Inspirations
+
+The idea of this project draws inspiration from various mathematical and visualization techniques, notably domain coloring, where complex functions are represented by colors assigned to the input plane. However, this work distinguishes itself by focusing on the codomain, as opposed to the domain, which is traditionally emphasized. By prioritizing the codomain, this approach seeks to address the underexplored representation of output mappings in complex functions, making it a novel perspective in mathematical visualization.
+
+![Domain Coloring](media/9.png)
+
+While the use of colors in mathematical representations has been explored in various ways, such as in heatmaps and chromatic visualizations, the unique combination of angular color mapping and codomain focus sets this project apart. It provides a more comprehensive understanding of the complex outputs of mathematical functions while maintaining clarity and accessibility.
